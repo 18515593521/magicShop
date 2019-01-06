@@ -1,0 +1,109 @@
+<view class="people">
+  <view>
+    <image src="{{headImage}}"></image>
+  </view>
+  <view>{{nickName}}</view>
+</view>
+
+<view style="position: absolute;">
+    <view class="menuItem" data-url="/pages/activity/activity_list/activity_list?activity=2" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/activity.png"></image>
+      </view>
+      <view class="title">我的活动</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <view class="menuItem" data-url="/pages/person_center/my_order/my_order" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/order.png"></image>
+      </view>
+      <view class="title">我的订单</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+      <view class='isNeedPay' hidden='{{isNeedPay!=1}}'></view>
+    </view>
+    <view class="menuItem" data-url="/pages/person_center/my_card/customer_card_list" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/coupons.png"></image>
+      </view>
+      <view class="title">我的卡券</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <view class="menuItem" data-url="/pages/person_center/booking/booking_list/booking_list" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/hot.png"></image>
+      </view>
+      <view class="title">爆款预订</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>  
+    <view class="menuItem" data-url="/pages/person_center/address/address_list/address_list" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/address.png"></image>
+      </view>
+      <view class="title">收货地址</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <!-- <view class="menuItem" data-url="/pages/person_center/collection/collection" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/collection.png"></image>
+      </view>
+      <view class="title">收藏产品</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <view class="menuItem" data-url="/pages/person_center/history/history" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/footprint.png"></image>
+      </view>
+      <view class="title">我的足迹</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view> -->
+    <view class="menuItem" data-url="/pages/person_center/adviser/adviser" data-check="2" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/adviser.png"></image>
+      </view>
+      <view class="title">专属顾问</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <view class="menuItem" data-url="/pages/person_center/invite/invite" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/code.png"></image>
+      </view>
+      <view class="title">我的专属码</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <view class="menuItem" data-url="/pages/person_center/extension/extension" data-check="1" data-type="1" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/extension.png"></image>
+      </view>
+      <view class="title">我的推广</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+    <view class="menuItem" data-url="/pages/index/index" data-type="4" bindtap="pageSkip">
+      <view class="image">
+        <image mode='widthFix' src="/images/menu/index.png"></image>
+      </view>
+      <view class="title">返回首页</view>
+      <view class="look">
+        <image src="/images/arrows_right.png"></image>
+      </view>
+    </view>
+</view>

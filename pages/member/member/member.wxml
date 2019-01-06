@@ -1,0 +1,38 @@
+<view class='vipBox paddingBox'>
+  <image src='{{indexData.image}}' class='vipbg'></image>
+  <view class='vipTextBox flexColumnH'>
+    <view class='vipName'>{{indexData.name}}</view>
+    <view class='vipNumber'>{{vipDatas.vip_code}}</view>
+  </view>
+</view>
+
+<view class='justAround flexRow vipBoxs'>
+  <view style='margin:auto;display:flex'>
+    <block wx:for='{{vipDatas.vipLevel}}' wx:key=''>
+
+      <view class='vipNameList flexColumnH'>
+        <view class='vipItemName {{item.color}}'>{{item.name}}</view>
+        <view class='flexRow vipStateBox  {{item.line}}' style='width:{{750/(vipData.length)}}rpx'>
+          <view class='line {{item.line}}'></view>
+          <view class='vipWidths'>
+            <image src='/images/member/check.png' class='vipState' wx:if='{{item.level==vipDatas.vip_level}}'></image>
+            <image src='/images/member/nocheck.png' class='vipState' hidden='{{item.level==vipDatas.vip_level}}'></image>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<ul class="flexColumnH ulBox" style='margin-top:40rpx'>
+  <li class="flexRow paddingBoxL" bindtap='skinUp' data-url='/pages/member/detailRule/detailRule?detail={{vipDatas.describe}}' data-types='1'>
+    <view class='flexRow' style='width:90%;'>
+      <image src='/images/member/rule.png' class='rule'></image>
+      <view class='ruleDetai'>会员章程</view>
+    </view>
+    <view class='rights'>
+      <image src='/images/member/right.png'></image>
+    </view>
+
+  </li>
+</ul>
